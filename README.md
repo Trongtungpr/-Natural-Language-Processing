@@ -15,6 +15,10 @@ This project will receive a text. then the website will use API from meaningclou
 2. Press submit
 3. Wait for the result to show up
 
+# Testing
+This project use jest to test
+To run, use command:
+  npm run test
 # Start Project
 Use command:
   npm run build-prod
