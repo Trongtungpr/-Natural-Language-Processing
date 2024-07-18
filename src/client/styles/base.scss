@@ -1,0 +1,26 @@
+/* General styles */
+$main-font: sans-serif;
+$light-gray: #f0f0f0;
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+header, main, footer {
+  padding: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Analysis text</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"><p>Logo</p></div>
+      <div class="navigation"><p></p>navigation</p></div>
+    </header>
+
+    <main>
+      <section>
+        <form id="urlForm" onsubmit="return Client.handleSubmit(event)">
+          <input
+            id="txt-to-analyze"
+            type="text"
+            name="txt-to-analyze"
+            placeholder="Enter text for analyze"
+            required
+          />
+          <button
+            id="submitButton"
+            type="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return handleSubmit(event)"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <strong>Form Results:</strong>
+        <div id="results">
+          <div id="text">URL:</div>
+          <div id="score_tag">Score tag:</div>
+          <div id="agreement">Agreement:</div>
+          <div id="subjectivity">Subjectivity:</div>
+          <div id="confidence">Confidence:</div>
+          <div id="irony">Irony:</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>This is a footer</p>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

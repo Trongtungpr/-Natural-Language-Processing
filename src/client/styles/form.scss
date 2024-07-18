@@ -1,0 +1,36 @@
+#urlForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    #submitButton {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Results styles */
+  #results {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  
+    div {
+      margin-bottom: 10px;
+    }
+  }
